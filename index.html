@@ -14,20 +14,31 @@
 
 </head>
 <body>
+<div style="position: fixed; z-index: -99; width: 100%; height: 100%">
+  <iframe frameborder="0" height="100%" width="100%" 
+    src="https://youtube.com/embed/8gD_9WPPFb4?autoplay=1&controls=0&showinfo=0&autohide=1">
+  </iframe>
+</div>
+
 	<div class="container">
 	<h1>So...how about this weather?</h1>
-		<div class="row col-sm-8">
+		<div class="row col-sm-12">
 		<form class="weather-form">
-		<input type="text" name="city" class="city">
+			<input type="text" name="city" class="city">
 		</form>
-
+		<img class="weather-icon" src="">
 		<canvas id="current-temp" height="300px" width="300px">
 		<!-- The temp done canvas style -->
 		</canvas>
+		<div class="col-sm-2 maxTemp"></div>
+		<div class="col-sm-2 minTemp"></div>
+		<div class="col-sm-2 description"></div>
 	</div>
 </div> <!-- close container -->
 
-
+<div style="position: fixed; z-index: -99; width: 100%; height: 100%">
+  
+</div>
 
 </body>
 </html>
