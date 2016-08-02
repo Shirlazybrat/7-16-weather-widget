@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather Widgwt</title>
+</head>
+<body>
+<style>
+	canvas{
+		border: 2px solid black;
+	}
+</style>
+
+<canvas class="the-canvas" height=800px width=1500px>
+	<!-- canvas cannot draw. It is an empty pallatte on which to draw. 
+our stuff will go here-->
+	
+</canvas>
+
+<script type="text/javascript">
+
+// $('canvas').click(function(){
+
+// });
+
+	var canvas = document.getElementsByClassName('the-canvas')[0];
+	var context = canvas.getContext('2d');
+
+	context.beginPath(); //stat at 100, 100
+	context.strokeStyle = "#f0ff00";
+	context.moveTo(100,100); //draw
+	context.lineTo(200,200); // draw to 200, 200
+	context.lineTo(300,100);
+	context.lineTo(100,200);
+	//context.stroke(200,100);
+
+	context.stroke();
+	//DRAW CIRcLE	
+	context.beginPath();
+	context.arc(375,175.175,50, 0.75*Math.PI, 2*Math.PI);
+	context.fill();
+
+	//draw rectanhgle
+	context.beginPath();
+	context.rect(300,20,100,100);
+	context.stroke();
+	context.fillStyle = "#00FFFF";
+
+	var x = 100;
+	var y = 100;
+	var radius = 10;
+	var endArc = 2;
+	var r = 0;
+	var g = 0;
+	var b = 0;
+
+	function draw(){
+		context.fillStyle = "#"+r+g+b;
+		context.beginPath();
+		context.clearRect(0,0,1500,400);
+		context.arc(x,y,radius,0,endArc*Math.PI);
+		context.fill();
+		x +=4;
+		y += 2;
+		//radius += 1;
+		endArc += .1;
+		r += 1;
+		b +=1;
+	}
+
+	function draw2(){
+		context.fillStyle = "#"+r+g+b;
+		context.beginPath();
+		context.clearRect(0,0,1500,400);
+		context.arc(x,y,radius,0,endArc*Math.PI);
+		context.fill();
+		x +=15;
+		y += 10;
+		endArc += .5
+		r += 1;
+		b +=1;
+
+		context.beginPath();
+		context.rect(300,20,100,100);
+		context.stroke();
+		context.fillStyle = "#00FFFF";
+	}
+
+	var ball = setInterval(draw,500);
+	var ball2 = setInterval(draw2, 50);
+
+	context.beginPath();
+	context.arc(375,175.175,50, 0.75*Math.PI, 1.75*Math.PI);
+	context.fill();
+
+</script>
+
+
+</body>
+</html>
