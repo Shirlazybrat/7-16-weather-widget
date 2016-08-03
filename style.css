@@ -4,16 +4,20 @@ body{
 	background-image: url('#');
 }
 .container{
-	background-color: rgba(53, 167, 255, 0.5);
+	background-color: rgba(53, 167, 255, 0.85);
 	margin: 100px auto;
 }
 
 
-h1{
+h1, h2{
 	text-align: center;
-	color:#ffe74c;
-	font-family:fantasy;
+	color:#38618c;
+	font-family: 'Varela Round', sans-serif;;
 }
+h2{
+	color:#ffe74c;
+}
+
 input{
 	margin: 20px;
 	font-size: 20px;
@@ -21,7 +25,7 @@ input{
 
 .maxTemp, .minTemp, .description{
 	color:#ffffff;
-	font-family:fantasy;
+	font-family: 'Varela Round', sans-serif;
 	font-size: 25px;
 	text-align: center;
 }
@@ -35,3 +39,19 @@ img{
 	width: 75px;
 }
 
+video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(wolken132.jpg) no-repeat;
+    background-size: cover; 
+}

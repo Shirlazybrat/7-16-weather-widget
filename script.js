@@ -58,7 +58,7 @@ var context = canvas.getContext('2d');
 			//drar that circle!
 			context.stroke();
 
-			context.font="35px fantasy";
+			context.font="35px 'Varela Round', sans-serif";
 			context.fillText(currentTemp+" F", 110, 170);
 
 
