@@ -1,6 +1,6 @@
 #Weather Widget Appliction
 
-###This is a Weather Widget application that allos the user to enter in a US city and the current local forcast is displayed with the temperature ( Max and Min) and  the current conditions. 
+###This is a Weather Widget application that allows the user to enter in a US city and the current local forecast is displayed with the temperature (Max and Min) and the current conditions. 
 
 ![Alt text](weatherscreen.png "Weather Widget")
 
